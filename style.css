@@ -52,7 +52,6 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  object-fit: cover;
 }
 
 .main-contact {
@@ -110,8 +109,8 @@
 }
 
 .status-header {
-  font-size: 13px;
-  color: gray;
+  font-size: 17px;
+  color: rgb(63, 63, 63);
 }
 
 .messages {
@@ -145,4 +144,44 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
+  cursor: pointer;
+}
+
+.messages {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.message-sent {
+  align-self: flex-end;
+  background-color: #b6d8da;
+  padding: 10px;
+  border-radius: 12px;
+  max-width: 60%;
+}
+
+.first-message-received {
+  align-self: flex-start;
+  background-color: #e2e3e5;
+  padding: 10px;
+  border-radius: 12px;
+  max-width: 60%;
+}
+
+.second-message-received {
+  align-self: flex-start;
+  background-color: #e2e3e5;
+  padding: 10px;
+  border-radius: 12px;
+  max-width: 60%;
+}
+
+.hours {
+  display: block;
+  font-size: 12px;
+  color: gray;
+  margin-top: 4px;
 }
