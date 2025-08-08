@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito", sans-serif;
+}
+
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 260px;
+  background: #f7f7f7;
+  border-right: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+}
+
+.search {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.contacts {
+  flex: 1;
+  overflow-y: auto;
+}
+
+
+.contacts li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+  transition: background 0.2s ease;
+}
+
+.contacts li:hover {
+  background-color: #f0f0f0;
+}
+
+.contacts img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.main-contact {
+  background: #c1c3c5;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.secondary-contact {
+  border-radius: 5px;
+}
+
+.status-sidebar {
+  display: block;
+  font-size: 12px;
+  color: gray;
+}
+
+.chat {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background: #f6f3ee;
+}
+
+.chat-header {
+  padding: 14px 20px;
+  border-bottom: 1px solid #ddd;
+  background: white;
+}
+
+.contact-name {
+  font-size: 18px;
+}
+
+.status-header {
+  font-size: 13px;
+  color: gray;
+}
+
+.messages {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
